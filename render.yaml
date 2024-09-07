@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: my-mern-app
+    env: node
+    buildCommand: "npm run build"
+    startCommand: "npm start"
+    repo: https://github.com/022ankitsoni/Vuexy.git  # Replace with your repository URL
+    branch: main  # Replace with your branch name
+    autoDeploy: true
