@@ -11,7 +11,7 @@ const ReferredUsers = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:8080/walletdata'); 
+        const response = await axios.get('/walletdata'); 
         setUsers(response.data);
       } catch (error) {
         console.error('Error fetching data:', error);

@@ -38,7 +38,7 @@ function App() {
   const fetchDataFromBackend = async () => {
     try {
       
-      const response = await axios.get('http://localhost:8080/walletdata');
+      const response = await axios.get('/walletdata');
       const data = response.data;
 
       const totalEarnings = data.reduce((acc, user) => acc + user.earnings, 0);
