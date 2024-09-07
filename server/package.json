@@ -2,8 +2,7 @@
  "type": "module",
  "scripts": {
   "start": "nodemon index.js",
-  "build": "cd ../client/vuexy && npm install && npm run build && cd ../../server",
-  "heroku-postbuild": "npm run build",
+  
   "test": "echo \"Error: no test specified\" && exit 1"
  },
  "dependencies": {
