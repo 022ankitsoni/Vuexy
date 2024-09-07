@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 import User from '../model/wallet-schema.js'; 
 
 const connectDB = async () => {
-    const url = "mongodb://127.0.0.1:27017/Vuexy";
+    const url = "mongodb+srv://insomniamusic999:DukiDaso999@cluster0.sqtldip.mongodb.net/Vuexy?retryWrites=true&w=majority&appName=Cluster0";
     mongoose.set('strictQuery', true);
 
     try {
