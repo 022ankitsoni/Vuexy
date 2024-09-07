@@ -2,8 +2,8 @@
  "type": "module",
  "scripts": {
   "start": "node index.js",
-  "build": "npm run build",
-  
+  "build": "cd ../client/vuexy && npm install && npm run build && cd ../../server",
+  "heroku-postbuild": "npm run build",
   "test": "echo \"Error: no test specified\" && exit 1"
  },
  "dependencies": {
