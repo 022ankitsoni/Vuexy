@@ -18,7 +18,7 @@ const __dirname = dirname(__filename);
 const buildPath = path.join(__dirname, "build");
 
 
-app.use('/',router);
+app.use(router);
 app.get("/", (req, res) => {
     res.sendFile(path.join(buildPath, "index.html"));
   });
