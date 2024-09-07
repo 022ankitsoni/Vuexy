@@ -22,11 +22,7 @@ app.use('/',router);
 app.get("/", (req, res) => {
     res.sendFile(path.join(buildPath, "index.html"));
   });
-app.get('/', async (req, res) => {
-    res.status(200).json({
-      message: 'Hello',
-    });
-  });
+
 
 const startServer = async () => {
     try {
