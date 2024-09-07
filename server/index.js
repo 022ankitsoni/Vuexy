@@ -16,7 +16,7 @@ const __dirname = dirname(__filename);
 // Define the path to your build folder
 // console.log(__dirname)
 const buildPath = path.join(__dirname, "build");
-
+app.use(express.static(buildPath));
 
 app.use(router);
 app.get("/", (req, res) => {
